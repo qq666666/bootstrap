@@ -1,0 +1,50 @@
+/*要想访问less文件，引入less.js文件，必须在服务器端浏览器测试*/
+//定义一个变量
+@color:red;
+@height:100px;
+body {
+	color:@color;
+}
+
+//嵌套关系
+.container {
+	height:@height;
+	.row {
+	color:@color;
+	.col {
+	    width:40px;
+	    >a {
+	     color:red;
+	     &:hover {
+	     height:40px;
+	     width:60px;
+	     }
+	    }
+	}
+	}
+}
+
+//定义一个代码段
+.radiusValue(@radius:10px) {
+	-webkit-border-radius:@radius;
+	-moz-border-radius:@radius;
+	border-radius:@radius;
+}
+
+#header {
+	.radiusValue();
+}
+
+footer {
+	.radiusValue(20px);
+}
+
+
+// /* 定义的类应用到另个一个类中 */
+@color:blue;
+@import url('_p.less');
+
+div {
+	color: lighten(#fff,10%);
+	backgound-color: darken(#000,10%);
+}

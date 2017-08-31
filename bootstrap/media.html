@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body,html {
+            padding: 0;
+            margin: 0;
+        }
+        .container {
+            height:1000px;
+            background-color:orange;
+        }
+        /*min-width媒体查询要从小到大排序，原因是css从上到下执行*/
+        /*max-width是从大到小排序*/
+
+        /*这里的代码只有当(min-width: 768px)满足的时候才其作用*/
+        @media (min-width: 768px) {
+            .container {
+                width: 750px;
+            }
+        }
+        @media (min-width: 992px) {
+            .container {
+                width: 970px;
+            }
+        }
+        @media (min-width: 1200px) {
+            .container {
+                width: 1170px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container"></div>
+</body>
+</html>

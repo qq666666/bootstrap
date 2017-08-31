@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        ul {
+            list-style: none;
+        }
+        ul li{
+            float: left;
+            height: 50px;
+            width: 50px;
+        }
+        /*选择第一个li后面的所有元素*/
+        ul li + li {
+            color: red;
+            border-left: 1px solid #ccc;
+        }
+        ul li.item + li {
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>好</li>
+    <li class="item">好</li>
+    <li>好</li>
+    <li>好</li>
+    <li>好</li>
+    <li>好</li>
+    <li>好</li>
+    <li>好</li>
+    <li>好</li>
+    <li>好</li>
+</ul>
+
+</body>
+</html>

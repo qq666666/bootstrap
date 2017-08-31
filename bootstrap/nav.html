@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" >
+    <title>微金所</title>
+
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!--[if lt IE 9]>
+    <script src="lib/html5shiv/html5shiv.min.js"></script>
+    <script src="lib/respond/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        .container {
+            height: 1000px;
+        }
+        .container ul {
+            position: relative;
+            overflow: hidden;
+            list-style: none;
+            padding: 0;
+            margin-top: 30px;
+        }
+
+        .container ul li {
+            display: inline-block;
+            float: left;
+            font-size: 30px;
+            /*自适应宽度*/
+            width: calc(100% / 6);
+        }
+
+        .container ul li + li {
+            border-left: 1px dashed #ccc;
+        }
+    </style>
+</head>
+<body>
+<div class="container text-center">
+    <h1> 你好，世界！</h1>
+    <ul class="center-block">
+        <li>你好</li>
+        <li>你好</li>
+        <li>你好</li>
+        <li>你好</li>
+        <li>你好</li>
+        <li>你好</li>
+    </ul>
+</div>
+
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

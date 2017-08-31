@@ -1,0 +1,850 @@
+/*自己写的css部分*/
+
+/* 自己制作注册按钮   网址：http://blog.koalite.com/bbg!*/
+.btn-register {
+    color: #ffffff;
+    background-color: #E92322;
+    border-color: #DB3B43;
+}
+
+.btn-register:hover,
+.btn-register:focus,
+.btn-register:active,
+.btn-register.active,
+.open .dropdown-toggle.btn-register {
+    color: #ffffff;
+    background-color: #E92322;
+    border-color: #DB3B43;
+}
+
+.btn-register:active,
+.btn-register.active,
+.open .dropdown-toggle.btn-register {
+    background-image: none;
+}
+
+.btn-register.disabled,
+.btn-register[disabled],
+fieldset[disabled] .btn-register,
+.btn-register.disabled:hover,
+.btn-register[disabled]:hover,
+fieldset[disabled] .btn-register:hover,
+.btn-register.disabled:focus,
+.btn-register[disabled]:focus,
+fieldset[disabled] .btn-register:focus,
+.btn-register.disabled:active,
+.btn-register[disabled]:active,
+fieldset[disabled] .btn-register:active,
+.btn-register.disabled.active,
+.btn-register[disabled].active,
+fieldset[disabled] .btn-register.active {
+    background-color: #E92322;
+    border-color: #DB3B43;
+}
+
+.btn-register .badge {
+    color: #E92322;
+    background-color: #ffffff;
+}
+
+/*自己制作nav的图标，从css中复制过来修改*/
+.navbar-weijinsuo {
+    background-color: #fff;
+    border-color: #f5f5f5;
+    margin-bottom: 0;
+    /*下面是设置固定导航栏*/
+    top:0;
+    width: 100%;
+}
+.navbar-weijinsuo .navbar-brand {
+    color: #777;
+    height: 80px;
+}
+.navbar-weijinsuo .navbar-brand:hover,
+.navbar-weijinsuo .navbar-brand:focus {
+    color: #5e5e5e;
+    background-color: transparent;
+}
+.navbar-weijinsuo .navbar-text {
+    color: #777;
+}
+.navbar-weijinsuo .navbar-nav > li > a {
+    color: #777;
+    line-height:48px;
+}
+.navbar-weijinsuo .navbar-nav > li > a:hover,
+.navbar-weijinsuo .navbar-nav > li > a:focus {
+    color: #333;
+    background-color: transparent;
+    border-bottom: 2px solid #E92322;
+}
+.navbar-weijinsuo .navbar-nav > .active > a,
+.navbar-weijinsuo .navbar-nav > .active > a:hover,
+.navbar-weijinsuo .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: transparent;
+    border-bottom: 2px solid #E92322;
+}
+.navbar-weijinsuo .navbar-nav > .disabled > a,
+.navbar-weijinsuo .navbar-nav > .disabled > a:hover,
+.navbar-weijinsuo .navbar-nav > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+}
+.navbar-weijinsuo .navbar-toggle {
+    border-color: #ddd;
+    margin-top: 23px;
+}
+.navbar-weijinsuo .navbar-toggle:hover,
+.navbar-weijinsuo .navbar-toggle:focus {
+    background-color: #ddd;
+}
+.navbar-weijinsuo .navbar-toggle .icon-bar {
+    background-color: #888;
+}
+.navbar-weijinsuo .navbar-collapse,
+.navbar-weijinsuo .navbar-form {
+    border-color: #e7e7e7;
+}
+.navbar-weijinsuo .navbar-nav > .open > a,
+.navbar-weijinsuo .navbar-nav > .open > a:hover,
+.navbar-weijinsuo .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+}
+@media (max-width: 767px) {
+    .navbar-weijinsuo .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .navbar-weijinsuo .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-weijinsuo .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+        background-color: transparent;
+    }
+    .navbar-weijinsuo .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-weijinsuo .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-weijinsuo .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #555;
+        background-color: #e7e7e7;
+    }
+    .navbar-weijinsuo .navbar-nav .open .dropdown-menu > .disabled > a,
+    .navbar-weijinsuo .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+    .navbar-weijinsuo .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+        color: #ccc;
+        background-color: transparent;
+    }
+}
+.navbar-weijinsuo .navbar-link {
+    color: #777;
+}
+.navbar-weijinsuo .navbar-link:hover {
+    color: #333;
+}
+.navbar-weijinsuo .btn-link {
+    color: #777;
+}
+.navbar-weijinsuo .btn-link:hover,
+.navbar-weijinsuo .btn-link:focus {
+    color: #333;
+}
+.navbar-weijinsuo .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-weijinsuo .btn-link:hover,
+.navbar-weijinsuo .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-weijinsuo .btn-link:focus {
+    color: #ccc;
+}
+
+
+/*自定义  特别推荐*/
+.panel-body {
+    padding: 0;
+}
+.panel-spec {
+    border-color: #ddd;
+    position: relative;
+     box-shadow: 1px 1px 5px #ccc;
+    border-radius: 0;
+}
+.panel-spec.active {
+    background-color: #E92322;
+}
+
+/*要加font-family才能使用字体图标*/
+.panel-spec.active:before {
+    content: '\e915';
+    font-family: weijinsuo;
+    position: absolute;
+    top:-10px;
+    left:0;
+    font-size: 35px;
+    color: white;
+}
+
+.panel-spec.state-1::before {
+    font-family: weijinsuo;
+    content: "\e925";
+    position: absolute;
+    top:180px;
+    left:120px;
+    font-size: 100px;
+    color: red;
+    z-index: 1002;
+}
+
+.panel-spec.state-1::before {
+    font-family: weijinsuo;
+    content: "\e925";
+    position: absolute;
+    top:0;
+    left:120px;
+    font-size: 100px;
+    color: red;
+    z-index: 1002;
+}
+
+.panel-spec.state-2::before {
+    font-family: weijinsuo;
+    content: "\e926";
+    position: absolute;
+    top:0;
+    left:120px;
+    font-size: 100px;
+    color: red;
+    z-index: 1002;
+}
+/*使用字体图标*/
+.panel-spec.state-3::before {
+    font-family: weijinsuo;
+    content: "\e927";
+    position: absolute;
+    top:0;
+    left:120px;
+    font-size: 100px;
+    color: red;
+    z-index: 1002;
+}
+.panel-spec.state-4::before {
+    font-family: weijinsuo;
+    content: "\e928";
+    position: absolute;
+    top:0;
+    left:120px;
+    font-size: 100px;
+    color: red;
+    z-index: 1002;
+}
+
+.panel-spec.disabled {
+    background-color: #e0e0e0;
+}
+.panel-spec.white {
+    background-color: #fff;
+}
+.panel-spec.active{
+    color: white;
+}
+h4 {
+    margin-top: 21px;
+    margin-bottom: -6px;
+    padding-left: 10px;
+}
+.panel-spec.white .panel-heading p ,.panel-spec.disabled .panel-heading p{
+    color: red;
+}
+.panel-spec.white .panel-heading span, .panel-spec.disabled .panel-heading span {
+    color: #3c3c3c;
+}
+/*自适应*/
+.panel-spec > .panel-heading {
+    background-color: transparent;
+    padding: 0;
+    float: right;
+    width: 130px;
+    border-left: 1px dashed #c0c0c0 ;
+    text-align: center;
+    height: 150px;
+
+}
+
+/*小圆点*/
+.panel-spec > .panel-heading::before,
+.panel-spec > .panel-heading::after {
+    content: '';
+    width: 16px;
+    height: 16px;
+    background-color:#f0f0f0;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.panel-spec > .panel-heading::before {
+    top:-8px;
+    left:-8px;
+
+}
+
+
+.panel-spec > .panel-heading::after {
+    bottom:-10px;
+    left:-8px;
+    box-shadow: 0 2px 5px #f5f5f5 inset;
+}
+
+.panel-spec > .panel-body {
+    margin-right:130px ;
+    height: 150px;
+}
+
+.panel-spec > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: #ddd;
+}
+.panel-spec > .panel-heading .badge {
+    color: #f5f5f5;
+    background-color: #333;
+}
+
+
+/*公共类*/
+body {
+    font-family: "Helvetica Neue",
+                  Helvetica,
+                  Microsoft Yahei,
+                  Hiragino Sans GB,
+                  WenQuanYi Micro Hei,
+                  sans-serif;
+}
+
+/* 声明字体图标   制作图标网址：https://icomoon.io/app/#/select*/
+@font-face {
+    font-family: "weijinsuo";
+    src: url('../font/MiFie-Web-Font.eot') format('embedded-opentype'),
+    url('../font/MiFie-Web-Font.svg') format('svg'),
+    url('../font/MiFie-Web-Font.ttf') format('truetype'),
+    url('../font/MiFie-Web-Font.woff') format('woff')
+
+}
+/*使用字体图标*/
+[class^="icon-"],[class*=" icon-"] {
+    font-family: weijinsuo;
+    font-style: normal;
+}
+.icon-mobilephone::before {
+    content: "\e908";
+    font-size: 13px;
+}
+
+.icon-telephone::before {
+    content: "\e909";
+    font-size: 15px;
+}
+.icon-logo::before {
+    content: "\e93e";
+}
+
+.icon-icon::before {
+    content: "\e920";
+}
+
+
+/*特色区域*/
+
+.icon-uniE900:before {
+    content: "\e900";
+}
+
+.icon-uniE901:before {
+    content: "\e901";
+}
+
+.icon-uniE902:before {
+    content: "\e902";
+}
+
+.icon-uniE903:before {
+    content: "\e903";
+}
+
+.icon-uniE904:before {
+    content: "\e904";
+}
+
+.icon-uniE905:before {
+    content: "\e905";
+}
+
+.icon-uniE906:before {
+    content: "\e906";
+}
+
+.icon-uniE907:before {
+    content: "\e907";
+}
+/*使用字体图标*/
+
+
+
+
+
+
+
+/*头部区域*/
+#header {
+}
+
+#header > .topbar {
+    border-bottom: 1px solid #f0f0f0;
+    line-height: 40px;
+}
+/*头部居中*/
+#header > .topbar > .container {
+    height: 40px;
+    font-size: 12px;
+    color: #888;
+}
+
+#header > .topbar > .container > .row >div {
+    height: 40px;
+}
+
+/*使第一个div后面的div生效*/
+#header > .topbar > .container > .row >div + div {
+    border-left: 1px solid #f0f0f0;
+}
+
+#header .mobile-link {
+    font-size: 12px;
+    color: #888;
+}
+
+#header .mobile-link:hover {
+    text-decoration: none;
+}
+/*扫一扫图片*/
+#header .mobile-link >img {
+    display: none;
+    position: absolute;
+    top:28px;
+    left:50%;
+    margin-left: -60px;
+    z-index: 1001;
+}
+
+#header .mobile-link:hover >img {
+    display: block;
+}
+
+#header > .topbar > .container > .row  .col-md-2 a{
+    font-size: 12px;
+    color: #888;
+}
+
+#header > .topbar > .container > .row  .col-md-2 a:hover {
+    text-decoration: none;
+}
+
+
+#header > .topbar > .container > .row  .col-md-3 a {
+    color: #888;
+    font-size: 12px;
+}
+
+#header > .topbar > .container > .row  .col-md-3 a:hover {
+    text-decoration: none;
+}
+
+#header .icon-icon {
+    font-size: 50px;
+    color: #E92322;
+    vertical-align: middle;
+    line-height: 50px;
+}
+
+#header .icon-logo {
+    font-size: 32px;
+    color: #333;
+    line-height: 50px;
+    vertical-align: middle;
+}
+
+/*头部区域*/
+
+
+
+/*广告轮播图*/
+#main_ad > .carousel-inner >.item{
+    background:  no-repeat center center;
+    background-size: cover;
+}
+
+/*当我们屏幕小于768的时候，高度不能使用410*/
+/*通过媒体查询控制*/
+@media (min-width: 768px) {
+    /*当屏幕大于768的时候，才会执行*/
+    #main_ad > .carousel-inner >.item{
+        height: 410px;
+    }
+}
+
+/*使小图便宽度100%*/
+#main_ad > .carousel-inner >.item img {
+    width: 100%;
+}
+/*广告轮播图*/
+
+
+
+
+/*特色区域*/
+ #special {
+     margin: 30px 0;
+     border-bottom: 1px solid #f0f0f0;
+ }
+ 
+ #special > .container > .row > div {
+     margin-top:20px;
+     margin-bottom: 20px;
+ }
+
+#special > .container > .row > div i {
+      font-size: 32px;
+}
+
+#special > .container > .row > div > a {
+    font-size: 12px;
+    color: #888;
+}
+
+#special > .container > .row > div > a:hover {
+    text-decoration: none;
+    color: #E92322;
+}
+    /*特色区域*/
+
+
+
+/*立即预约区域*/
+#ljyy {
+   height:40px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+#ljyy > .container > p > span, #ljyy > .container > p > a {
+    color: #E92322;
+}
+
+#ljyy > .container > p.pull-left > a {
+    border-bottom: 1px dashed #E92322;
+}
+
+#ljyy > .container > p > a:hover {
+    text-decoration: none;
+}
+#ljyy > .container > p.pull-right a{
+    color: #888;
+}
+
+#ljyy > .container > p.pull-right a:hover {
+    color: #E92322;
+}
+/*立即预约区域*/
+
+
+
+
+/*产品板块*/
+#products {
+    background-color: #f5f5f5;
+    padding-top:40px;
+}
+
+/*这样写pc上始终有横向滚动条*/
+/*#products > .container > .ulWrap {*/
+    /*overflow-x: scroll;*/
+/*}*/
+
+#products > .container > .ulWrap > .nav-tabs {
+    padding-left: 20px;
+}
+#products > .container > .ulWrap > .nav-tabs > li > a{
+    background-color: transparent;
+    border: 0;
+    color: #888;
+}
+
+#products > .container > .ulWrap  > .nav-tabs > li > a:hover{
+     color: #0f0f0f;
+}
+
+#products > .container > .ulWrap  > .nav-tabs > li.active > a{
+    border-bottom: 4px solid #E92322;
+
+}
+
+#products > .container > .ulWrap  > .nav-tabs > li.active > a:hover{
+     color: #888;
+}
+
+.tab-content  .row {
+    padding: 20px;
+}
+
+
+.tab-content .panel-body p.top {
+    color: #c0c0c0;
+}
+
+ p {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+ .tab-content .panel-heading p ,  .tab-content .panel-heading  span{
+     color: white;
+ }
+
+.tab-content .panel-heading span {
+    margin-top: -20px;
+    display: block;
+}
+
+.tab-content .panel-heading {
+    position: relative;
+}
+.tab-content .panel-heading  p {
+    margin-top: 50px;
+}
+
+.tab-content .panel-heading p.tooltips {
+    position: absolute;
+    top: -25px;
+    left:40px;
+}
+
+.tab-content .panel-heading p.tooltips a.badge {
+    width: 20px;
+    height: 20px;
+    border-radius: 0;
+    background-color: transparent;
+    border: 1px solid #E92322;
+    padding-right: 15px;
+
+}
+
+.tab-content .panel-heading p.tooltips a.badge-one {
+        color: red;
+}
+
+.tab-content .panel-heading p.tooltips a.badge-two {
+    color: #399;
+
+    border-color: #399;
+}
+
+.tab-content .panel-heading strong {
+    font-size: 25px;
+}
+/*产品板块*/
+
+
+
+
+/*新闻列表*/
+#news {
+    margin-right: 20px;
+    border-bottom: 1px solid #c0c0c0;
+}
+
+#news > .container > .row  .news-title {
+    padding:0 10px 10px 10px;
+    border-bottom: 1px dashed #c0c0c0;
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+}
+
+#news > .container > .row  .news-title::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    border: 1px solid #c0c0c0;
+    position: absolute;
+    top:33px;
+    left:170px;
+    display: block;
+}
+
+#news > .container > .row .nav-stacked li.active{
+    border-radius:50%;
+    width: 60px;
+    height: 60px;
+}
+
+#news > .container > .row .nav-stacked li.active a {
+   border-radius: 50%;
+    text-align: center;
+    background-color: #E92322;
+
+}
+
+#news > .container > .row .nav-stacked li {
+    margin-top: 20px;
+    width: 60px;
+    height: 60px;
+}
+
+#news > .container > .row .nav-stacked li a {
+    border-radius: 50%;
+    text-align: center;
+    background-color: #c0c0c0;
+
+}
+
+#news > .container > .row .nav-stacked li a:hover {
+    background-color: #E92322;
+}
+
+/*字体图标*/
+.icon-news01:before {
+    content: "\e90e";
+    font-size: 28px;
+    color: #EAEAEA;
+}
+
+.icon-news02:before {
+    content: "\e90f";
+    font-size: 28px;
+    color: #EAEAEA;
+}
+
+.icon-news03:before {
+    content: "\e910";
+    font-size: 28px;
+    color: #EAEAEA;
+}
+
+.icon-news04:before {
+    content: "\e911";
+    font-size: 28px;
+    color: #EAEAEA;
+}
+
+@media (min-width: 992px) {
+    #news > .container > .row .tab-content {
+        border-left: 1px dashed #c0c0c0;
+    }
+
+}
+
+#news > .container > .row .tab-content div ul {
+    list-style: none;
+}
+
+#news > .container > .row .tab-content div ul li {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    #news .nav-stacked>li {
+        float: left;
+        margin-left: 20px;
+    }
+}
+/*新闻列表*/
+
+
+
+/*合作伙伴*/
+#hzhb {
+ padding: 30px 0;
+}
+
+#hzhb ul {
+    padding: 0;
+    list-style: none;
+    position: relative;
+    overflow: hidden;
+}
+
+#hzhb ul li {
+    float: left;
+    display: inline-block;
+    /*设置自适应宽度*/
+    width: calc(100% / 9);
+}
+#hzhb ul li + li {
+  border-left: 1px dashed #c0c0c0;
+}
+
+#hzhb ul li a {
+    display: block;
+    color: #888;
+    font-size: 50px;
+    padding: 10px 20px;
+
+}
+
+#hzhb ul li a:hover {
+    text-decoration: none;
+    color: #E92322;
+}
+
+
+/*字体图标*/
+.hzhb01::before {
+    font-family: weijinsuo;
+    content: '\e946';
+    font-size: 50px;
+}
+.hzhb02::before {
+    font-family: weijinsuo;
+    content: '\e92f';
+    font-size: 50px;
+}
+.hzhb03::before {
+    font-family: weijinsuo;
+    content: '\e92e';
+    font-size: 50px;
+}
+.hzhb04::before {
+    font-family: weijinsuo;
+    content: '\e92a';
+    font-size: 50px;
+}
+.hzhb05::before {
+    font-family: weijinsuo;
+    content: '\e929';
+    font-size: 50px;
+}
+.hzhb06::before {
+    font-family: weijinsuo;
+    content: '\e931';
+    font-size: 50px;
+}
+.hzhb07::before {
+    font-family: weijinsuo;
+    content: '\e92c';
+    font-size: 50px;
+}
+.hzhb08::before {
+    font-family: weijinsuo;
+    content: '\e92b';
+    font-size: 50px;
+}
+.hzhb09::before {
+    font-family: weijinsuo;
+    content: '\e92d';
+    font-size: 50px;
+}
+
+/*合作伙伴*/
+
+
+
+
+/*注脚区域*/
+#footer {
+   height: 200px;
+}
+
+/*注脚区域*/
